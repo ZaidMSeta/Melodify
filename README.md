@@ -1,2 +1,3 @@
 # sem1_2023_2024
-This is the project description
+Melodify
+A website that requires facial recognition to log in and plays music. 
