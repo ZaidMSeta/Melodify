@@ -1,0 +1,41 @@
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+input {
+    font-size: 1rem;
+}
+
+img {
+    display: inline-block;
+    align-items: center;
+  }
+
+.song-cards {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+.song {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+}
+
+.song > .header {
+    margin-bottom: .25rem;
+}
+
+.song > .body {
+    font-size: .8rem;
+    color: #777;
+}
+
+.hide {
+    display: none;
+}
+
