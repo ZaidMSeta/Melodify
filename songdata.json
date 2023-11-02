@@ -1,4 +1,3 @@
-
 [
     {
         "songname": "Speak to Me",
@@ -36,7 +35,7 @@
         "link": "https://www.youtube.com/watch?v=JkhX5W7JoWI",
         "image": "https://imgur.com/e1U4X2N"
     },
-    {
+    { 
         "songname": "Us and Them",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=HoLhKJuGhK0",
@@ -59,5 +58,65 @@
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=9wjZrswriz0",
         "image": "https://imgur.com/e1U4X2N"
+    },
+    {
+        "songname": "Sprinter",
+        "artist": "Central Cee",
+        "link": "https://youtu.be/pSY3i5XHHXo?si=Z6Flr0iPkJMKWf1i",
+        "image": "https://imgur.com/siOnQHd"
+    },
+    {
+        "songname": "One Up",
+        "artist": "Central Cee",
+        "link": "https://youtu.be/mzpMpj0FHTU?si=XvuiO7ZqnjeTchsC",
+        "image": "https://imgur.com/siOnQHd"
+    },
+    {
+        "songname": "Pinging 6 figures",
+        "artist": "Central Cee",
+        "link": "https://youtu.be/05uUcFel3ME?si=E-ZrTz0ccFlonNLR",
+        "image": "https://imgur.com/BOrgmu1"
+    },
+    {
+        "songname": "Wants and Needs",
+        "artist": "Drake",
+        "link": "https://youtu.be/0oBeEnY2CAQ?si=9qEVkY6mReVWXZ39",
+        "image": "https://imgur.com/QrksXCw"
+    },
+    {
+        "songname": "Pine Soul",
+        "artist": "Nav",
+        "link": "https://youtu.be/4H6P1eUBsDs?si=-mRLcZplyw_haFhZ",
+        "image": "https://imgur.com/jnyr7mS"
+    },
+    {
+        "songname": "Burning",
+        "artist": "Mhunco",
+        "link": "https://youtu.be/r7jibbi1uL4?si=ckvAFArOi94Bdc-A",
+        "image": "https://imgur.com/zf2miFl"
+    },
+    {
+        "songname": "Pee Pee",
+        "artist": "Mhunco",
+        "link": "https://youtu.be/7bZq9Kv8bic?si=RX0EL73WlPTrP4jL",
+        "image": "https://imgur.com/ICeT5Gt"
+    },
+    {
+        "songname": "Rap Saved Me",
+        "artist": "21 Savage, Offset and Metroboom",
+        "link": "https://www.youtube.com/watch?v=LK9rgGmrH7I",
+        "image": "https://imgur.com/RwdPAaX"
+    },
+    {
+        "songname": "Took her to the O",
+        "artist": "King Von",
+        "link": "https://www.youtube.com/watch?v=hzt31eJTGxo&ab_channel=KingVon",
+        "image": "https://imgur.com/Okx5aOJ"
+    },
+    {
+        "songname": "Too Many nights",
+        "artist": "Metroboom, future",
+        "link": "https://www.youtube.com/watch?v=NyTkaQHdySM",
+        "image": "https://imgur.com/undefined"
     }
 ]
