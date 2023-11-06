@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="searchbar.css">
-    <script src="searchbar.js"defer></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="searchbar.css">
+  <script src="searchbar.js" defer></script>
+  <title>Document</title>
 </head>
 <body>
-    <div class="search-wrapper">
-        <label for="search">Search</label>
-        <input type="search" id="search" data-search>
+  <div class="search-wrapper">
+    <label for="search">Search </label>
+    <input type="search" id="search" data-search>
+  </div>
+  <div class="song-cards" data-song-cards-container></div>
+  <template data-song-template>
+    <div class="card">
+      <img src="imgsrc" data-img>
+      <div class="header" data-header></div>
+      <div class="body" data-body></div>
     </div>
-    <div class="song-cards" data-song-cards-container></div>
-<template data-song-template>
-    <div class="song">
-        <img src="imgsrc" data-img>
-        <div class="text"></div>
-            <div class="header" data-header></div>
-            <div class="body" data-body></div>   
-    </div>
-</template>
+  </template>
 </body>
 </html>

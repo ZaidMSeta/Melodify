@@ -2,40 +2,34 @@
     display: flex;
     flex-direction: column;
     gap: .25rem;
-}
-
-input {
-    font-size: 1rem;
-}
-
-img {
-    display: inline-block;
-    align-items: center;
   }
-
-.song-cards {
-    background-color: rgb(255, 255, 255);
+  
+  input {
+    font-size: 1rem;
+  }
+  
+  .song-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: .25rem;
     margin-top: 1rem;
-}
-.song {
+  }
+  
+  .card {
     border: 1px solid black;
     background-color: white;
     padding: .5rem;
-}
-
-.song > .header {
+  }
+  
+  .card > .header {
     margin-bottom: .25rem;
-}
-
-.song > .body {
+  }
+  
+  .card > .body {
     font-size: .8rem;
     color: #777;
-}
-
-.hide {
+  }
+  
+  .hide {
     display: none;
-}
-
+  }
