@@ -21,9 +21,13 @@ fetch("songdata.json")
       const card = songCardTemplate.content.cloneNode(true).children[0]
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
+      const image = card.querySelector("[data-image]")
+      //line above 
       header.textContent = song.songname
       body.textContent = song.artist
+      image.textContent = song.image
       songCardContainer.append(card)
-      return { name: song.songname, artist: song.artist, element: card }
+      return { name: song.songname, artist: song.artist, element: card, image: song.image, }
+      //returned image above 
     })
   })

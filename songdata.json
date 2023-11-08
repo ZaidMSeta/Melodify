@@ -3,120 +3,120 @@
         "songname": "Speak to Me",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=FEacDWPWfJU",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Breathe",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=mrojrDCI02k",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "On the Run",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=vVooyS4mG4w",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Time",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=Qr0-7Ds79zo",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "The Great Gig in the Sky",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=T13se_2A7c8",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Money",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=JkhX5W7JoWI",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     { 
         "songname": "Us and Them",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=HoLhKJuGhK0",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Any Colour You Like",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=bK7HJvmgFnM",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Brain Damage",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=QFdkM40KOhE",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Eclipse",
         "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=9wjZrswriz0",
-        "image": "https://imgur.com/e1U4X2N"
+        "image": "song_images/test.png"
     },
     {
         "songname": "Sprinter",
         "artist": "Central Cee",
         "link": "https://youtu.be/pSY3i5XHHXo?si=Z6Flr0iPkJMKWf1i",
-        "image": "https://imgur.com/siOnQHd"
+        "image": "song_images/siOnQHd.png"
     },
     {
         "songname": "One Up",
         "artist": "Central Cee",
         "link": "https://youtu.be/mzpMpj0FHTU?si=XvuiO7ZqnjeTchsC",
-        "image": "https://imgur.com/siOnQHd"
+        "image": "song_images/siOnQHd.png"
     },
     {
         "songname": "Pinging 6 figures",
         "artist": "Central Cee",
         "link": "https://youtu.be/05uUcFel3ME?si=E-ZrTz0ccFlonNLR",
-        "image": "https://imgur.com/BOrgmu1"
+        "image": "song_images/BOrgmu1.png"
     },
     {
         "songname": "Wants and Needs",
         "artist": "Drake",
         "link": "https://youtu.be/0oBeEnY2CAQ?si=9qEVkY6mReVWXZ39",
-        "image": "https://imgur.com/QrksXCw"
+        "image": "song_images/QrksXCw.png"
     },
     {
         "songname": "Pine Soul",
         "artist": "Nav",
         "link": "https://youtu.be/4H6P1eUBsDs?si=-mRLcZplyw_haFhZ",
-        "image": "https://imgur.com/jnyr7mS"
+        "image": "song_images/jnyr7mS.png"
     },
     {
         "songname": "Burning",
         "artist": "Mhunco",
         "link": "https://youtu.be/r7jibbi1uL4?si=ckvAFArOi94Bdc-A",
-        "image": "https://imgur.com/zf2miFl"
+        "image": "song_images/zf2miFl.png"
     },
     {
         "songname": "Pee Pee",
         "artist": "Mhunco",
         "link": "https://youtu.be/7bZq9Kv8bic?si=RX0EL73WlPTrP4jL",
-        "image": "https://imgur.com/ICeT5Gt"
+        "image": "song_images/ICeT5Gt.png"
     },
     {
         "songname": "Rap Saved Me",
         "artist": "21 Savage, Offset and Metroboom",
         "link": "https://www.youtube.com/watch?v=LK9rgGmrH7I",
-        "image": "https://imgur.com/RwdPAaX"
+        "image": "song_images/RwdPAaX.png"
     },
     {
         "songname": "Took her to the O",
         "artist": "King Von",
         "link": "https://www.youtube.com/watch?v=hzt31eJTGxo&ab_channel=KingVon",
-        "image": "https://imgur.com/Okx5aOJ"
+        "image": "song_images/Okx5aOJ.png"
     },
     {
         "songname": "Too Many nights",
         "artist": "Metroboom, future",
         "link": "https://www.youtube.com/watch?v=NyTkaQHdySM",
-        "image": "https://imgur.com/undefined"
+        "image": "song_images/artworks-VkCRcGm6T7cx-0-t500x500.png"
     }
 ]
