@@ -20,7 +20,7 @@
     background-color: white;
     padding: .5rem;
   }
-  
+
   .card > .header {
     margin-bottom: .25rem;
   }
@@ -32,4 +32,12 @@
   
   .hide {
     display: none;
+  }
+
+  .card > img {
+    width: 125px; /* Adjust the width as needed */
+    height: 125px; /* Maintain aspect ratio */
+    display: block; /* Remove any default spacing/margin */
+    margin-bottom: 0.5rem; /* Adjust spacing between image and other content */
+    border: 1px solid #000000;
   }

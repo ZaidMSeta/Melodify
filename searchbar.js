@@ -25,7 +25,7 @@ fetch("songdata.json")
       //line above 
       header.textContent = song.songname
       body.textContent = song.artist
-      image.textContent = song.image
+      image.src = song.image
       songCardContainer.append(card)
       return { name: song.songname, artist: song.artist, element: card, image: song.image, }
       //returned image above 
