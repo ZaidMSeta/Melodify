@@ -6,6 +6,7 @@
     <meta name="viewport" content="device-width", intial-scale="1.0">
     <title>Sidebar</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
 
@@ -18,11 +19,61 @@
             <i class="bx bx-menu"" id="btn"></i>
         </div>
         <div class="user">
-            <img src="" alt="">
+            <img src="profile.jpg" alt="profile" class="profile">
+            <div>
+                <p class="bold">User</p>
+                <p>Admin</p>
+            </div>
             
         </div>
-        <ul></ul>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-music"></i>
+                    <span class="nav-item">Songs</span>
+                </a>
+                <span class="tooltip">Songs</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-cog"></i>
+                    <span class="nav-item">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-log-out"></i>
+                    <span class="nav-item">Log Out</span>
+                </a>
+                <span class="tooltip">Log Out</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Melodify</h1>
+        </div>
     </div>
 
 </body>
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let sidebar = document.querySelector(.siderbar)
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active'):
+        };
+    </script>
+
 </html>
