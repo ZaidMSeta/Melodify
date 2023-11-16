@@ -64,5 +64,8 @@ body{
     padding: 0px 10px;
 }
 .submit{
-    
+    width:100%
+}
+.links{
+    margin-bottom: 15px;
 }
