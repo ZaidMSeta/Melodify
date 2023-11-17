@@ -7,12 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="playlist-cards" data-playlist-container></div>
+    <div class="playlist-container" data-playlist-container>
+    </div>
+    <template data-category-template>
+        <section class="category">
+            <h2 data-category-title></h2>
+            <div class="playlist-cards" data-playlist-cards></div>
+        </section>
+    </template>
     <template data-playlist-template>
-        <div class="card">
-          <img data-playlist_image>
-          <div class="playlist_header" data-playlist_header></div>
-          <div class="playlist_description" data-playlist_description></div>
+        <div class="card slideshow-slide">
+            <img data-playlist-image>
+            <div class="playlist_header" data-playlist-header></div>
+            <div class="playlist_description" data-playlist-description></div>
         </div>
     </template>
     <script src="app.js"></script>

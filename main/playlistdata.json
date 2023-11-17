@@ -1,27 +1,62 @@
 [
     {
-        "title": "playlist title 1",
-        "description": "playlist description 1",
-        "album_cover": "imgtest.jpg"       
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
     },
     {
-        "title": "playlist title 1",
-        "description": "playlist description 1",
-        "album_cover": "imgtest.jpg"       
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
     },
     {
-        "title": "playlist title 1",
-        "description": "playlist description 1",
-        "album_cover": "imgtest.jpg"       
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
     },
     {
-        "title": "playlist title 1",
-        "description": "playlist description 1",
-        "album_cover": "imgtest.jpg"       
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
     },
     {
-        "title": "playlist title 1",
-        "description": "playlist description 1",
-        "album_cover": "imgtest.jpg"       
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
+    },
+    {
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
+    },
+    {
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
+    },
+    {
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
+    },
+    {
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
+    },
+    {
+        "title": "Playlist Title 1",
+        "description": "Playlist Description 1",
+        "album_cover": "imgtest.jpg",
+        "category": "Category 1"
     }
 ]
