@@ -7,6 +7,8 @@ body {
 
 /* Container for the playlist cards */
 .playlist-cards {
+    background-color: #0002;
+    border-radius: 10px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -23,7 +25,7 @@ body {
 
 /* Individual playlist card */
 .card {
-    width: 250px;
+    width: 250px; 
     background-color: #202020;
     border-radius: 10px;
     overflow: hidden;
@@ -48,7 +50,7 @@ body {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-bottom: 2px solid #ff0303;
+    border-bottom: 5px solid #ff0000;
 }
 
 /* Playlist header */
