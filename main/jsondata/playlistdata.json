@@ -1,9 +1,15 @@
+
 [
     {
-        "title": "Awesome Mix Vol. 1",
-        "description": "Kick back and enjoy a diverse collection of tunes that'll make your day!",
+        "title": "Awesome Mix Vol. 4",
+        "description": "Feel the rhythm with this incredible mix!",
         "album_cover": "playlistimages/imgtest.jpg",
-        "category": "Category 1",
-        "link": "playlists/index.html"
+        "category": "Category 4",
+        "link": "playlists/index4.html",
+        "songs": [
+            {"song": "1"},
+            {"song": "2"},
+            {"song": "3"}
+        ]
     }
 ]
