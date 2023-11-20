@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="playlist-container" data-playlist-container>
+    </div>
+    <template data-category-template>
+        <section class="category">
+            <h2 data-category-title></h2>
+            <div class="playlist-cards" data-playlist-cards></div>
+        </section>
+    </template>
+    <template data-playlist-template>
+        <div class="card slideshow-slide" data-playlist-link>
+            <img data-playlist-image>
+            <div class="playlist_header" data-playlist-header></div>
+            <div class="playlist_description" data-playlist-description></div>
+        </div>
+    </template>
+    <script src="app.js"></script>
+</body>
+</html>
