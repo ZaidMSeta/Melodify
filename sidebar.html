@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="device-width", intial-scale="1.0">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
     <title>Sidebar</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="sidebar.css">
@@ -29,7 +29,7 @@
         <ul>
             <li>
                 <a href="#">
-                    <i class="bx bxs-music"></i>
+                    <i class="bx bxs-music" id="songs_button"></i>
                     <span class="nav-item">Songs</span>
                 </a>
                 <span class="tooltip">Songs</span>
@@ -53,7 +53,7 @@
                     <i class="bx bxs-log-out"></i>
                     <span class="nav-item">Log_Out</span>
                 </a>
-                <span class="tooltip">Log_Out</span>
+                <span class="tooltip">Logout</span>
             </li>
         </ul>
     </div>
@@ -73,8 +73,17 @@
         let sidebar = document.querySelector('.sidebar')
 
         btn.onclick = function () {
+            console.log("Button clicked");
             sidebar.classList.toggle('active');
         };
+    </script>
+    <script>
+        let songs_button = document.querySelector('#songs_button')
+        songs_button.onclick = function () {
+            console.log("Button clicked");
+            window.open('sidebar.html', '_blank');
+        };
+
     </script>
 
 </html>
