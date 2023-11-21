@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #292929;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Container for the playlist cards */
+.playlist-cards {
+    background-color: #0002;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px;
+    cursor: grab; /* Change cursor when grabbing */
+}
+
+/* Add styles for scrollbar */
+.playlist-cards::-webkit-scrollbar {
+    width: 0; /* Make scrollbar invisible */
+}
+
+/* Individual playlist card */
+.card {
+    width: 250px; 
+    background-color: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: #000;
+    transition: transform 0.3s ease-in-out;
+    color: #fff;
+    flex-shrink: 0; /* Prevent cards from shrinking too much */
+    cursor: grab; /* Change cursor when grabbing */
+}
+
+/* Change cursor when grabbing */
+.card:active {
+    cursor: grabbing;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Playlist image */
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid #ff0000;
+}
+
+/* Playlist header */
+.playlist_header {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Playlist description */
+.playlist_description {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Add styles for the play button */
+.card:hover .play-button {
+    opacity: 1;
+}
+
+/* Category title styles */
+[data-category-title] {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    background-color: #292929;
+    text-align: center;
+}
+
+/* Playlist container styles */
+.playlist-container {
+    max-width: 90%;
+    margin: 20px auto;
+}
