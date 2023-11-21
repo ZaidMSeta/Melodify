@@ -144,126 +144,111 @@
         "artist": "Gunna,MetroBoomin,NAV",
         "link": "https://www.youtube.com/watch?v=mrojrDCI02k",
         "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
+        "audio": "song_audio/Gunna - Car Sick (feat. NAV & Metro Boomin) [Official Audio] (1).mp3"
     },
     {
-        "songname": "On the Run",
-        "artist": "Pink Floyd",
-        "link": "https://www.youtube.com/watch?v=vVooyS4mG4w",
+        "songname": "She Knows",
+        "artist": "Jcole",
+        "link": "https://www.youtube.com/watch?v=jYdaQJzcAcw&ab_channel=JColeVEVO",
         "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
+        "audio": "song_audio/J. Cole - She Knows (Explicit Video) ft. Amber Coffman, Cults.mp3"
     },
     {
-        "songname": "Time",
-        "artist": "Pink Floyd",
-        "link": "https://www.youtube.com/watch?v=Qr0-7Ds79zo",
+        "songname": "Dreamville",
+        "artist": "Jcole",
+        "link": ".",
         "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
+        "audio": "song_audio/Dreamville - Under The Sun ft. J. Cole, DaBaby, Lute (Official Music Video).mp3"
     },
     {
-        "songname": "The Great Gig in the Sky",
-        "artist": "Pink Floyd",
+        "songname": "Workout",
+        "artist": "Jcole",
         "link": "https://www.youtube.com/watch?v=T13se_2A7c8",
         "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
+        "audio": "song_audio/J. Cole  Work Out (Official Music Video).mp3"
     },
     {
-        "songname": "Money",
-        "artist": "Pink Floyd",
+        "songname": "Money Trees",
+        "artist": "Kendric Lamar",
         "link": "https://www.youtube.com/watch?v=JkhX5W7JoWI",
         "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
+        "audio": "song_audio/Money Trees.mp3"
     },
     { 
-        "songname": "Us and Them",
-        "artist": "Pink Floyd",
+        "songname": "Pray For Me",
+        "artist": "The Weekend, Kendric Lamar",
         "link": "https://www.youtube.com/watch?v=HoLhKJuGhK0",
         "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
+        "audio": "song_audio/The Weeknd, Kendrick Lamar - Pray For Me (Official Lyric Video).mp3"
     },
     {
-        "songname": "Any Colour You Like",
-        "artist": "Pink Floyd",
-        "link": "https://www.youtube.com/watch?v=bK7HJvmgFnM",
-        "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
-    },
-    {
-        "songname": "Brain Damage",
-        "artist": "Pink Floyd",
-        "link": "https://www.youtube.com/watch?v=QFdkM40KOhE",
-        "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
-    },
-    {
-        "songname": "Eclipse",
-        "artist": "Pink Floyd",
-        "link": "https://www.youtube.com/watch?v=9wjZrswriz0",
-        "image": "song_images/test.png",
-        "audio": "song_audio/night.mp3"
-    },
-    {
-        "songname": "Sprinter",
-        "artist": "Central Cee",
-        "link": "https://youtu.be/pSY3i5XHHXo?si=Z6Flr0iPkJMKWf1i",
-        "image": "song_images/siOnQHd.png",
-        "audio": "song_audio/night.mp3"
-    },
-    {
-        "songname": "One Up",
-        "artist": "Central Cee",
-        "link": "https://youtu.be/mzpMpj0FHTU?si=XvuiO7ZqnjeTchsC",
-        "image": "song_images/siOnQHd.png",
-        "audio": "song_audio/night.mp3"
-    },
-    {
-        "songname": "Pinging 6 figures",
-        "artist": "Central Cee",
-        "link": "https://youtu.be/05uUcFel3ME?si=E-ZrTz0ccFlonNLR",
-        "image": "song_images/BOrgmu1.png",
-        "audio": "song_audio/night.mp3"
-    },
-    {
-        "songname": "Wants and Needs",
+        "songname": "Hotline Bling",
         "artist": "Drake",
-        "link": "https://youtu.be/0oBeEnY2CAQ?si=9qEVkY6mReVWXZ39",
-        "image": "song_images/QrksXCw.png",
-        "audio": "song_audio/night.mp3"
+        "link": "https://www.youtube.com/watch?v=uxpDa-c-4Mc",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - Hotline Bling.mp3"
     },
     {
-        "songname": "Burning",
-        "artist": "Mhunco",
-        "link": "https://youtu.be/r7jibbi1uL4?si=ckvAFArOi94Bdc-A",
-        "image": "song_images/zf2miFl.png",
-        "audio": "song_audio/night.mp3"
+        "songname": "God's Plan",
+        "artist": "Drake",
+        "link": "https://www.youtube.com/watch?v=xpVfcZ0ZcFM",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - God's Plan.mp3"
     },
     {
-        "songname": "Pee Pee",
-        "artist": "Mhunco",
-        "link": "https://youtu.be/7bZq9Kv8bic?si=RX0EL73WlPTrP4jL",
-        "image": "song_images/ICeT5Gt.png",
-        "audio": "song_audio/night.mp3"
+        "songname": "In My Feelings",
+        "artist": "Drake",
+        "link": "https://www.youtube.com/watch?v=DRS_PpOrUZ4",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - In My Feelings.mp3"
     },
     {
-        "songname": "Rap Saved Me",
-        "artist": "21 Savage, Offset and Metroboom",
-        "link": "https://www.youtube.com/watch?v=LK9rgGmrH7I",
-        "image": "song_images/RwdPAaX.png",
-        "audio": "song_audio/night.mp3"
+        "songname": "Started From the Bottom",
+        "artist": "Drake",
+        "link": "https://www.youtube.com/watch?v=RubBzkZzpUA",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - Started From The Bottom (Explicit).mp3"
     },
     {
-        "songname": "Took her to the O",
-        "artist": "King Von",
-        "link": "https://www.youtube.com/watch?v=hzt31eJTGxo&ab_channel=KingVon",
-        "image": "song_images/Okx5aOJ.png",
-        "audio": "song_audio/night.mp3"
+        "songname": "Nice For What",
+        "artist": "Drake",
+        "link": "https://www.youtube.com/watch?v=U9BwWKXjVaI",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake  Nice For What.mp3"
     },
     {
-        "songname": "Too Many nights",
-        "artist": "Metroboom, future",
-        "link": "https://www.youtube.com/watch?v=NyTkaQHdySM",
-        "image": "song_images/artworks-VkCRcGm6T7cx-0-t500x500.png",
-        "audio": "song_audio/night.mp3"
+        "songname": "Take Care",
+        "artist": "Drake ft. Rihanna",
+        "link": "https://www.youtube.com/watch?v=-zzP29emgpg",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake  Take Care ft Rihanna.mp3"
+    },
+    {
+        "songname": "Nonstop",
+        "artist": "Drake",
+        "link": "https://www.youtube.com/watch?v=KkN7b3P4lDg",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - Nonstop.mp3"
+    },
+    {
+        "songname": "Money In The Grave",
+        "artist": "Drake ft. Rick Ross",
+        "link": "https://www.youtube.com/watch?v=Z_9s9NAh-2I",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - Money In The Grave ft. Rick Ross.mp3"
+    },
+    {
+        "songname": "Energy",
+        "artist": "Drake",
+        "link": "https://www.youtube.com/watch?v=7LnBvuzjpr4",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - Energy.mp3"
+    },
+    {
+        "songname": "Hold On, We're Going Home",
+        "artist": "Drake ft. Majid Jordan",
+        "link": "https://www.youtube.com/watch?v=GxgqpCdOKak",
+        "image": "song_images/placeholder.png",
+        "audio": "song_audio/Drake - Hold On, Were Going Home ft. Majid Jordan.mp3"
     }
-
-]
+    
