@@ -199,14 +199,14 @@
         "songname": "In My Feelings",
         "artist": "Drake",
         "link": "https://www.youtube.com/watch?v=DRS_PpOrUZ4",
-        "image": "song_images/placeholder.png",
+        "image": "song_images/drake2.jpg",
         "audio": "song_audio/Drake - In My Feelings.mp3"
     },
     {
         "songname": "Started From the Bottom",
         "artist": "Drake",
         "link": "https://www.youtube.com/watch?v=RubBzkZzpUA",
-        "image": "song_images/placeholder.png",
+        "image": "song_images/drake.jpg",
         "audio": "song_audio/Drake - Started From The Bottom (Explicit).mp3"
     },
     {
@@ -241,14 +241,14 @@
         "songname": "Energy",
         "artist": "Drake",
         "link": "https://www.youtube.com/watch?v=7LnBvuzjpr4",
-        "image": "song_images/placeholder.png",
+        "image": "song_images/drake.jpg",
         "audio": "song_audio/Drake - Energy.mp3"
     },
     {
         "songname": "Hold On, We're Going Home",
         "artist": "Drake ft. Majid Jordan",
         "link": "https://www.youtube.com/watch?v=GxgqpCdOKak",
-        "image": "song_images/placeholder.png",
+        "image": "song_images/drake.jpg",
         "audio": "song_audio/Drake - Hold On, Were Going Home ft. Majid Jordan.mp3"
     }
 ]
