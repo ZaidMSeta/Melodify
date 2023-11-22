@@ -54,7 +54,7 @@ body {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-bottom: 5px solid #ff0000;
+    border-bottom: 5px solid rgb(207, 45, 45);
 }
 
 /* Playlist header */
@@ -108,15 +108,18 @@ body {
 
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100vh; /* Set the height to 100% of the viewport height */
     width: 12%;
     max-width: 90px;
-    background-color:rgb(171, 49, 49); /* main sidebar background */
+    background-color: rgb(207, 45, 45);
     padding: .4rem .8rem;
     transition: all 0.5s ease;
+    display: flex; /* Use flex display for the sidebar */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Distribute space evenly between children */
 }
 
 
