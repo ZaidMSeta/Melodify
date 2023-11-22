@@ -5,23 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="device-width", intial-scale="1.0">
+    <title>Sidebar</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
-    <div class="playlist-container" data-playlist-container>
-    </div>
-    <template data-category-template>
-        <section class="category">
-            <h2 data-category-title></h2>
-            <div class="playlist-cards" data-playlist-cards></div>
-        </section>
-    </template>
-    <template data-playlist-template>
-        <div class="card slideshow-slide" data-playlist-link>
-            <img data-playlist-image>
-            <div class="playlist_header" data-playlist-header></div>
-            <div class="playlist_description" data-playlist-description></div>
+    
+    <div class="sidebar">
+        <div class="user">
+            <img src="profile.jpg" alt="profile" class="profile">
+            <div>
+                <p class="bold">User</p>
+                <p>Admin</p>
+            </div>
+            
         </div>
-    </template>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-music"></i>
+                    <span class="nav-item">Songs</span>
+                </a>
+                <span class="tooltip">Songs</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-user"></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-cog"></i>
+                    <span class="nav-item">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-log-out"></i>
+                    <span class="nav-item">Log_Out</span>
+                </a>
+                <span class="tooltip">Log_Out</span>
+            </li>
+        </ul>
+    </div>
+    <div class="mainpage">
+        <div class="playlist-container" data-playlist-container>
+        </div>
+        <template data-category-template>
+            <section class="category">
+                <h2 data-category-title></h2>
+                <div class="playlist-cards" data-playlist-cards></div>
+            </section>
+        </template>
+        <template data-playlist-template>
+            <div class="card slideshow-slide" data-playlist-link>
+                <img data-playlist-image>
+                <div class="playlist_header" data-playlist-header></div>
+                <div class="playlist_description" data-playlist-description></div>
+            </div>
+        </template>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
