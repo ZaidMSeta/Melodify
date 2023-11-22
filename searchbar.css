@@ -9,64 +9,64 @@ body {
 }
 
 .search-wrapper {
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px;
-    margin: 5px;
-  }
-  
-  input {
-    font-size: 1rem;
-    background-color: #343434;
-    color: #fff;
-    border-radius: 10px;
-  }
-  
-  .song-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 70px;
-    margin-top: 1rem;
-    margin: 15px;
-  }
-  
-  .card {
-    background-color: #323232;
-    padding: .5rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all ease 0.4s;
-    width: 160px;
-    padding: 20px;
-    height: 225px;
-  }
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  margin: 5px;
+}
 
-  .card:hover {
-    background-color: #242424;
-  }
-  
-  .card > .header {
-    margin-bottom: .25rem;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .card > .body {
-    font-size: .8rem;
-    color: #777;
-    font-weight: bold;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  .card > img {
-    width: 158px; /* Adjust the width as needed */
-    height: 158px; /* Maintain aspect ratio */
-    display: block; /* Remove any default spacing/margin */
-    margin-bottom: 0.5rem; /* Adjust spacing between image and other content */
-    border: 1px solid #000000;
-  }
+input {
+  font-size: 1rem;
+  background-color: #343434;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.song-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 70px;
+  margin-top: 1rem;
+  margin: 15px;
+}
+
+.song_card {
+  background-color: #323232;
+  padding: .5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+  width: 160px;
+  padding: 20px;
+  height: 225px;
+}
+
+.song_card:hover {
+  background-color: #242424;
+}
+
+.song_card > .song_header {
+  margin-bottom: .25rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.song_card > .song_body {
+  font-size: .8rem;
+  color: #777;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.song_card > img {
+  width: 158px;
+  height: 158px;
+  display: block;
+  margin-bottom: 0.5rem;
+  border: 1px solid #000000;
+}

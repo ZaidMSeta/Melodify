@@ -10,7 +10,7 @@ searchInput.addEventListener("input", e => {
     const isVisible =
       song.name.toLowerCase().includes(value) ||
       song.artist.toLowerCase().includes(value)
-    song.element.classList.toggle("hide", !isVisible)
+    song.card.classList.toggle("hide", !isVisible)
   })
 })
 
@@ -18,16 +18,16 @@ fetch("songdata.json")
   .then(res => res.json())
   .then(data => {
     songs = data.map(song => {
-      const card = songCardTemplate.content.cloneNode(true).children[0]
-      const header = card.querySelector("[data-header]")
-      const body = card.querySelector("[data-body]")
-      const image = card.querySelector("[data-image]")
-      //line above 
-      header.textContent = song.songname
-      body.textContent = song.artist
+      const song_card = songCardTemplate.content.cloneNode(true).children[0]
+      const song_header = song_card.querySelector("[data-song_header]")
+      const song_body = song_card.querySelector("[data-song_body]")
+      const image = song_card.querySelector("[data-image]")
+      
+      song_header.textContent = song.songname
+      song_body.textContent = song.artist
       image.src = song.image
-      songCardContainer.append(card)
-      return { name: song.songname, artist: song.artist, element: card, image: song.image, }
-      //returned image above 
+      songCardContainer.append(song_card)
+      
+      return { name: song.songname, artist: song.artist, card: song_card, image: song.image }
     })
   })
