@@ -16,11 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
  
   // Function to load music based on index
-  function loadMusic(index) {
-    titleElement.innerText = musicData[index].title;
-    audioElement.src = musicData[index].audio;
-    coverElement.src = musicData[index].image;
-  }
+function loadMusic(index) {
+  titleElement.innerText = musicData[index].songname;
+  audioElement.src = musicData[index].audio;
+  coverElement.src = musicData[index].image;
+
+  const artistElement = document.getElementById("artist");
+  artistElement.innerText = musicData[index].artist;
+
+  // Highlight the currently playing song
+  const songElements = document.querySelectorAll(".song");
+  songElements.forEach((song, i) => {
+    if (i === index) {
+      song.classList.add("current-song");
+    } else {
+      song.classList.remove("current-song");
+    }
+  });
+}
+
 
   // Function to toggle play and pause
   function togglePlay() {
