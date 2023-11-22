@@ -136,14 +136,14 @@
         "songname": "Power Trip",
         "artist": "Jcole",
         "link": "https://www.youtube.com/watch?v=7AjD7nKiUQ4&ab_channel=JColeVEVO",
-        "image": "test.png",
+        "image": "song_images/download.jpg",
         "audio": "song_audio/J. Cole - Power Trip (Explicit) ft. Miguel.mp3"
     },
     {
         "songname": "Car Sick",
         "artist": "Gunna,MetroBoomin,NAV",
         "link": "https://www.youtube.com/watch?v=mrojrDCI02k",
-        "image": "song_images/carsick.png",
+        "image": "song_images/carsick.jpg",
         "audio": "song_audio/Gunna - Car Sick (feat. NAV & Metro Boomin) [Official Audio] (1).mp3"
     },
     {
@@ -185,7 +185,7 @@
         "songname": "Hotline Bling",
         "artist": "Drake",
         "link": "https://www.youtube.com/watch?v=uxpDa-c-4Mc",
-        "image": "song_images/placeholder.png",
+        "image": "song_images/drrr.jpg",
         "audio": "song_audio/Drake - Hotline Bling.mp3"
     },
     {
