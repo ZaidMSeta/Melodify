@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fetch music data from JSON file
   fetch("songdata.json")
-    .then((response) => response.json())
-    .then((data) => {
-      musicData = data;
-      loadMusic(currentIndex);
-    });
-
+  .then((response) => response.json())
+  .then((data) => {
+    musicData = data;
+    loadMusic(currentIndex);
+  });
+ 
   // Function to load music based on index
   function loadMusic(index) {
     titleElement.innerText = musicData[index].title;
@@ -58,4 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add an event listener to the audio element to update the play button when the audio is paused or played
   audioElement.addEventListener("play", updatePlayButton);
   audioElement.addEventListener("pause", updatePlayButton);
+  // Function to load music based on index
+function loadMusic(index) {
+  titleElement.innerText = musicData[index].songname;
+  audioElement.src = musicData[index].audio;
+  coverElement.src = musicData[index].image;
+  
+  // Add the artist information
+  const artistElement = document.getElementById("artist");
+  artistElement.innerText = musicData[index].artist;
+}
+
 });
