@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 body{
     background-color:rgb(53, 104, 41)
@@ -125,4 +125,13 @@ body{
     .bottom{
         margin-top: 0;
     }
+}
+.message{
+    text-align: center;
+    background: #a01010;
+    padding: 15px 0px;
+    border:1px solid #cf1b0b;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: rgb(213, 76, 76);
 }
