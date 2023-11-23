@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang ="en">
 <head>
@@ -10,11 +13,38 @@
 <body>
         <div class="container">
             <div class="box form-box">
+                <?php 
+                
+                    include("pgp/config.php");
+                    if(isset($_POST['submit'])){
+                        $email = mysqli_real_escape_string($con,$_POST['email']);
+                        $password = mysqli_real_escape_string($con,$_POST['password']);
+
+                        $result = mysqli_query($con,"SELECT * FORM users WHERE Email= '$email' AND Password = '$password' ") or die("Select Error");
+                        $row = mysqli_fetch_assoc($result);
+
+                        if(is_array($row) && !empty($row)){
+                            $_SESSION['valid'] = $row['Email'];
+                            $_SESSION['username'] = $row['Username'];
+                            $_SESSION['age'] = $row['Age'];
+                            $_SESSION['id'] = $row['Id'];
+                        }else{
+                            echo "<div class='message'>
+                                <p>Wrong Username or Password!</p>
+                                </div> <br>";
+                            echo "<a href='loginindex.php'><button class = 'button'>Go Back</button>";
+                        }
+                        if(isset($_SESSION['valid'])){
+                            header("Location: signup_page/hometest.php");
+                        }
+                    }else{
+
+                ?>
                 <header>Login</header>
                 <form action="" method="post">
                     <div class="field input">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" required>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required>
                     </div>
 
                     <div class="field input">
@@ -31,6 +61,7 @@
                     </div>
                 </form>
             </div>
+            <?php } ?>
         </div>
 </body>
 </html>
