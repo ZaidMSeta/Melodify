@@ -14,13 +14,13 @@
         <div class="container">
             <div class="box form-box">
                 <?php 
-                
+    
                     include("pgp/config.php");
                     if(isset($_POST['submit'])){
                         $email = mysqli_real_escape_string($con,$_POST['email']);
                         $password = mysqli_real_escape_string($con,$_POST['password']);
 
-                        $result = mysqli_query($con,"SELECT * FORM users WHERE Email= '$email' AND Password = '$password' ") or die("Select Error");
+                        $result = mysqli_query($con,"SELECT * FROM users WHERE Email= '$email' AND Password = '$password' ") or die("Select Error");
                         $row = mysqli_fetch_assoc($result);
 
                         if(is_array($row) && !empty($row)){
@@ -35,7 +35,7 @@
                             echo "<a href='loginindex.php'><button class = 'button'>Go Back</button>";
                         }
                         if(isset($_SESSION['valid'])){
-                            header("Location: signup_page/hometest.php");
+                            header("Location: hometest.php");
                         }
                     }else{
 
