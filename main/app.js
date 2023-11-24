@@ -82,8 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
         function goToSearchPage() {
-            // You can customize the search page URL as needed
-            window.location.href = 'searchbar.html';
+            window.location.href = '../searchbar/searchbar.html';
         }
         document.getElementById('searchbutton').addEventListener('click', goToSearchPage);
 });

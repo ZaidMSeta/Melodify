@@ -14,7 +14,7 @@ searchInput.addEventListener("input", e => {
   })
 })
 
-fetch("songdata.json")
+fetch("../songdata.json")
   .then(res => res.json())
   .then(data => {
     songs = data.map(song => {

@@ -35,7 +35,6 @@ input {
 .song_card {
   background-color: #323232;
   padding: .5rem;
-  border-radius: 6px;
   cursor: pointer;
   transition: all ease 0.4s;
   width: 160px;
