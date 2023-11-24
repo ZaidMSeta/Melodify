@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <!DOCTYPE html>
 <html lang ="en">
 <head>
@@ -35,7 +32,7 @@
                             echo "<a href='loginindex.php'><button class = 'button'>Go Back</button>";
                         }
                         if(isset($_SESSION['valid'])){
-                            header("Location: hometest.php");
+                            header("Location: ../main/index.html");
                         }
                     }else{
 
