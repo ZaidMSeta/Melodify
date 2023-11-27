@@ -32,5 +32,5 @@ fetch("../songdata.json")
     })
   })
   function goBack() {
-    window.history.back();
+    window.location.href = '../main/index.html';
   }
