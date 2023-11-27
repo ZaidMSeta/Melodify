@@ -81,4 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
+        function goToSearchPage() {
+            window.location.href = '../searchbar/searchbar.html';
+        }
+        document.getElementById('searchbutton').addEventListener('click', goToSearchPage);
 });
