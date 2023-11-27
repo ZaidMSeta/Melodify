@@ -15,7 +15,7 @@
     },
     {
         "songname": "On the Run",
-        "artis.t": "Pink Floyd",
+        "artist": "Pink Floyd",
         "link": "https://www.youtube.com/watch?v=vVooyS4mG4w",
         "image": "song_images/test.png",
         "audio": "song_audio/On_the_run.mp3"
