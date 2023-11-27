@@ -31,3 +31,6 @@ fetch("../songdata.json")
       return { name: song.songname, artist: song.artist, card: song_card, image: song.image }
     })
   })
+  function goBack() {
+    window.history.back();
+  }
