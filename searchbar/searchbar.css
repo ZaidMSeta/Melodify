@@ -95,6 +95,7 @@ input::placeholder {
 
 .backbutton button:hover {
   background-color: #ffffff;
+  color: #000;
 }
 
 .song-cards {
