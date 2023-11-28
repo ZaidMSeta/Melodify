@@ -3,40 +3,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const titleElement = document.getElementById("title");
   const audioElement = document.getElementById("audio");
   const coverElement = document.getElementById("cover");
+  const artistElement = document.getElementById("artist"); // Moved outside loadMusic function
 
   let currentIndex = 0;
   let musicData;
 
   // Fetch music data from JSON file
   fetch("songdata.json")
-  .then((response) => response.json())
-  .then((data) => {
-    musicData = data;
-    loadMusic(currentIndex);
-  });
- 
+    .then((response) => response.json())
+    .then((data) => {
+      musicData = data;
+      loadMusic(currentIndex);
+    });
+
   // Function to load music based on index
-function loadMusic(index) {
-  titleElement.innerText = musicData[index].songname;
-  audioElement.src = musicData[index].audio;
-  coverElement.src = musicData[index].image;
+  function loadMusic(index) {
+    const currentSong = musicData[index];
+    titleElement.innerText = currentSong.songname;
+    audioElement.src = currentSong.audio;
+    coverElement.src = currentSong.image;
+    artistElement.innerText = currentSong.artist; // Moved this line outside the function
 
-  const artistElement = document.getElementById("artist");
-  artistElement.innerText = musicData[index].artist;
-
-  // Highlight the currently playing song
-  const songElements = document.querySelectorAll(".song");
-  songElements.forEach((song, i) => {
-    if (i === index) {
-      song.classList.add("current-song");
-    } else {
-      song.classList.remove("current-song");
-    }
-  });
-}
-
-
-  // Function to toggle play and pause
+    // Highlight the currently playing song
+    const songElements = document.querySelectorAll(".song");
+    songElements.forEach((song, i) => {
+      if (i === index) {
+        song.classList.add("current-song");
+      } else {
+        song.classList.remove("current-song");
+      }
+    });
+  }
   function togglePlay() {
     if (audioElement.paused) {
       audioElement.play();
@@ -45,8 +42,6 @@ function loadMusic(index) {
     }
     updatePlayButton(); // Update the play button icon
   }
-
-  // Function to update the play button icon based on the audio's playing state
   function updatePlayButton() {
     const playIcon = document.querySelector("#play i");
     const isPlaying = !audioElement.paused;
@@ -72,15 +67,4 @@ function loadMusic(index) {
   // Add an event listener to the audio element to update the play button when the audio is paused or played
   audioElement.addEventListener("play", updatePlayButton);
   audioElement.addEventListener("pause", updatePlayButton);
-  // Function to load music based on index
-function loadMusic(index) {
-  titleElement.innerText = musicData[index].songname;
-  audioElement.src = musicData[index].audio;
-  coverElement.src = musicData[index].image;
-  
-  // Add the artist information
-  const artistElement = document.getElementById("artist");
-  artistElement.innerText = musicData[index].artist;
-}
-
 });
