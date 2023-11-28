@@ -12,7 +12,12 @@ body {
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+.topbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
 .profile {
     width: 50px;
     border-radius: 100%;
