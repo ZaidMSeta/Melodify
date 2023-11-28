@@ -19,18 +19,29 @@ fetch("../songdata.json")
   .then(data => {
     songs = data.map(song => {
       const song_card = songCardTemplate.content.cloneNode(true).children[0]
+      const songid = song_card.querySelector("[data-songid]")
       const song_header = song_card.querySelector("[data-song_header]")
       const song_body = song_card.querySelector("[data-song_body]")
       const image = song_card.querySelector("[data-image]")
-      
       song_header.textContent = song.songname
       song_body.textContent = song.artist
       image.src = song.image
       songCardContainer.append(song_card)
       
-      return { name: song.songname, artist: song.artist, card: song_card, image: song.image }
+      song_card.addEventListener("click", () => handleCardClick(song));
+
+      return { name: song.songname, artist: song.artist, card: song_card, image: song.image, songid: song.songid }
     })
   })
   function goBack() {
     window.location.href = '../main/index.html';
+  }
+  function handleCardClick(song) {
+    playSong(song);
+  }
+  function playSong(song) {
+    const audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.src = song.audio;
+    audioPlayer.play();
+
   }

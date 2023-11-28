@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="searchbar.css">
   <script src="searchbar.js" defer></script>
+  <link rel="import" href="../songplayer.html">
   <title>Search Bar</title>
 </head>
 <body>
@@ -22,10 +23,14 @@
   <div class="song-cards" data-song-cards-container></div>
   <template data-song-template>
     <div class="song_card">
+      <span data-songid="songid"></span>
       <img src="image" data-image>
       <div class="song_header" data-song_header></div>
       <div class="song_body" data-song_body></div>
+      
     </div>
-  </template>
+  </template>  
+  <div id="song-player-container"></div>
+  <script src="../songplayer.js" defer></script>
 </body>
 </html>
