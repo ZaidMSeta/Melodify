@@ -6,6 +6,15 @@ body {
   padding: 0;
 }
 
+.topbarheader {
+  background-color: rgb(255, 32, 32);
+  padding: 40px;
+  text-align: left;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+}
+
 /* Search bar container styles */
 .search-bar-container {
   display: flex;
