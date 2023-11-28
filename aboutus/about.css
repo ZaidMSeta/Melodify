@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #292929;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+.profile {
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid #ffffff; /* profile border colour */
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    width: 12%;
+    max-width: 90px;
+    background-color: rgb(207, 45, 45);
+    padding: .4rem .8rem;
+    transition: all 0.5s ease;
+    display: flex; /* Use flex display for the sidebar */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Distribute space evenly between children */
+}
+
+
+
+
+.sidebar #btn {
+    position: absolute;
+    color: #ffff; /* menu icon colour */
+    top: .4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.user p {
+    color: #fff;
+    opacity: 1;
+    margin-left: 1rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.sidebar p {
+    opacity: 0;
+}
+.sidebar.active p {
+    opacity: 1;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #ffff; /* sidebar icon colours */
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ffffff; /* icon box hover colour */
+    color: #000000; /* icon hover colour */
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+
+.sidebar .nav-item {
+    opacity: 0;
+}
+
+
+
+.sidebar ul li .tooltip {
+    position: absolute;
+    left: 125px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    border-radius: .6rem;
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    z-index: 20;
+    opacity: 0;
+    background-color: #ffffff;
+}
+
+.sidebar ul li:hover .tooltip {
+    opacity: 1;
+}
+ 
+html {
+    box-sizing: border-box;
+    margin-left: 15%;
+  }
+  
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    margin: 8px;
+    background-color: #706f6f;
+  }
+  
+.container {
+    padding: 0 16px;
+  }
+  
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.title {
+    color: rgb(207, 207, 207);
+  }
+  
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #9e3939;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+.button:hover {
+    background-color: #ffffff;
+    color:#000;
+  }
+  
+@media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }

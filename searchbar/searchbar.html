@@ -9,9 +9,15 @@
   <title>Search Bar</title>
 </head>
 <body>
-  <div class="search-wrapper">
-    <label for="search">Search </label>
-    <input type="search" id="search" data-search>
+  <div class="topbarheader">Melodify</div>
+  <div class="search-bar-container">
+    <div class="search-wrapper">
+      <label for="search">Search </label>
+      <input type="search" id="search" data-search>
+    </div>
+    <div class="backbutton">
+      <button onclick="goBack()">Back</button>
+    </div>
   </div>
   <div class="song-cards" data-song-cards-container></div>
   <template data-song-template>
