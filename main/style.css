@@ -47,6 +47,7 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 0px 15px rgba(255, 0, 0, 0.1);
 }
 
 /* Playlist image */
