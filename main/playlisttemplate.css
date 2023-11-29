@@ -23,22 +23,21 @@ body {
 }
 
 #song-container {
-    margin-top: 20px;
     background-color: #2d2d2d;
     border-radius: 25px;
-    padding: ;
+    margin: 20px;
 }
 
 .song-container {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid #3d3d3d;
+    border-bottom: 5px solid #3d3d3d;
     padding: 10px;
+    color: #fff;
 }
 
 .song-container:hover {
-    transform: scale(1.01);
-    box-shadow: 0 0px 15px rgba(255, 0, 0, 0.1);
+    transform: scale(1.015);
 }
 
 .song-image {
