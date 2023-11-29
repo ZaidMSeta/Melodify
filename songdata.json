@@ -171,7 +171,7 @@
         "songname": "She Knows",
         "artist": "Jcole",
         "link": "https://www.youtube.com/watch?v=jYdaQJzcAcw&ab_channel=JColeVEVO",
-        "image": "../song_images/test.png",
+        "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
         "audio": "song_audio/J. Cole - She Knows (Explicit Video) ft. Amber Coffman, Cults.mp3",
         "songid": "song21"
     },
@@ -179,7 +179,7 @@
         "songname": "Dreamville",
         "artist": "Jcole",
         "link": ".",
-        "image": "../song_images/test.png",
+        "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
         "audio": "song_audio/Dreamville - Under The Sun ft. J. Cole, DaBaby, Lute (Official Music Video).mp3",
         "songid": "song22"
     },
@@ -187,7 +187,7 @@
         "songname": "Workout",
         "artist": "Jcole",
         "link": "https://www.youtube.com/watch?v=T13se_2A7c8",
-        "image": "../song_images/test.png",
+        "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
         "audio": "song_audio/J. Cole  Work Out (Official Music Video).mp3",
         "songid": "song23"
     },
@@ -195,7 +195,7 @@
         "songname": "Money Trees",
         "artist": "Kendric Lamar",
         "link": "https://www.youtube.com/watch?v=JkhX5W7JoWI",
-        "image": "../song_images/test.png",
+        "image": "../song_images/350x350.jpg",
         "audio": "song_audio/Money Trees.mp3",
         "songid": "song24"
     },
@@ -203,7 +203,7 @@
         "songname": "Pray For Me",
         "artist": "The Weekend, Kendric Lamar",
         "link": "https://www.youtube.com/watch?v=HoLhKJuGhK0",
-        "image": "../song_images/test.png",
+        "image": "../song_images/350x350.jpg",
         "audio": "song_audio/The Weeknd, Kendrick Lamar - Pray For Me (Official Lyric Video).mp3",
         "songid": "song25"
     },
