@@ -53,9 +53,16 @@
                         
                         <input type="submit" class = "button" name="submit" value="Login" required>
                     </div>
+
                     <div class="links">
                         Don't have an account? <a href="register.php">Sign Up</a>
                     </div>
+                    
+                    <form>
+                        <button type="reset" class ="button" onclick="location.href='register.php'"> 
+                        Login with Face ID
+                     </button>
+                    </form>
                 </form>
             </div>
             <?php } ?>

@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = (currentIndex + 1) % musicData.length;
     loadMusic(currentIndex);
   });
-
+````
   // Event listener for previous button
   document.getElementById("prev").addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + musicData.length) % musicData.length;
@@ -68,3 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
   audioElement.addEventListener("play", updatePlayButton);
   audioElement.addEventListener("pause", updatePlayButton);
 });
+
+function songPlayer(id) {
+  console.log("hi")
+
+}

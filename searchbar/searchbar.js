@@ -32,5 +32,9 @@ fetch("../songdata.json")
     })
   })
   function goBack() {
+    console.log("hello")
     window.location.href = '../main/index.html';
+  }
+  function playSong(id) {
+    songPlayer(id);
   }

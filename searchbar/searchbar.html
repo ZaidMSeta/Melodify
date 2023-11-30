@@ -6,22 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="searchbar.css">
   <script src="searchbar.js" defer></script>
+  <script src="songplayer.js"></script>
   <title>Search Bar</title>
 </head>
 <body>
+  <div class="backbutton">
+    <button onclick="goBack()">Back</button>
+  </div>
   <div class="topbarheader">Melodify</div>
   <div class="search-bar-container">
     <div class="search-wrapper">
       <label for="search">Search </label>
       <input type="search" id="search" data-search>
     </div>
-    <div class="backbutton">
-      <button onclick="goBack()">Back</button>
-    </div>
   </div>
   <div class="song-cards" data-song-cards-container></div>
   <template data-song-template>
-    <div class="song_card">
+    <div class="song_card" onclick="songPlayer(data-)">
       <img src="image" data-image>
       <div class="song_header" data-song_header></div>
       <div class="song_body" data-song_body></div>

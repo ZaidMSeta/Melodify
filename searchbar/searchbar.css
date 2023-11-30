@@ -33,7 +33,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   margin: 5px;
-  width: 90%;
+  width: 100%;
 }
 
 /* Input styles */
@@ -67,36 +67,39 @@ input::placeholder {
 }
 
 /* Back button styles */
+.backbutton {
+    background-color:  rgb(207, 45, 45);
+    padding: 10px;
+}
 .backbutton button {
-  font-size: 1rem;
-  background-color: #343434;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-
-.backbutton button:hover {
-  background-color: #242424;
-}
-
-/* Back button styles */
-.backbutton button {
-  font-size: 1rem;
-  background-color: #343434;
-  color: #fff;
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 10px 10px;
-  font-weight: bold;
-}
-
-.backbutton button:hover {
-  background-color: #ffffff;
-  color: #000;
-}
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-weight: bold;
+  }
+  
+  .backbutton button:hover {
+    background-color: #242424;
+  }
+  
+  /* Back button styles */
+  .backbutton button {
+    font-size: 1rem;
+    background-color: #343434;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 10px;
+    font-weight: bold;
+  }
+  
+  .backbutton button:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
 
 .song-cards {
   display: grid;
