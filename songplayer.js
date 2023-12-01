@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("songdata.json")
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       musicData = data;
       loadMusic(currentIndex);
     });
@@ -33,7 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
         song.classList.remove("current-song");
       }
     });
+
+    // Remove the currently playing song class from the song player
+    const currentSongPlayer = document.querySelector(".music-container.current-song");
+    if (currentSongPlayer) {
+      currentSongPlayer.classList.remove("current-song");
+    }
+
+    // Add the currently playing song class to the song player
+    musicContainer.classList.add("current-song");
   }
+
   function togglePlay() {
     if (audioElement.paused) {
       audioElement.play();
@@ -42,6 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     updatePlayButton(); // Update the play button icon
   }
+
   function updatePlayButton() {
     const playIcon = document.querySelector("#play i");
     const isPlaying = !audioElement.paused;
@@ -57,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex = (currentIndex + 1) % musicData.length;
     loadMusic(currentIndex);
   });
-````
+
   // Event listener for previous button
   document.getElementById("prev").addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + musicData.length) % musicData.length;
@@ -70,6 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function songPlayer(id) {
-  console.log("hi")
+  const selectedSongIndex = parseInt(id, 10); // Parse the id to an integer
 
+  if (!isNaN(selectedSongIndex)) {
+    // Play the selected song in the song player
+    playMusic(selectedSongIndex);
+  }
 }
