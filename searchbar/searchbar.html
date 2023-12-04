@@ -21,11 +21,11 @@
   </div>
   <div class="song-cards" data-song-cards-container></div>
   <template data-song-template>
-    <div class="song_card" onclick="playSong('songid')" data-song-id>
-      <img src="image" data-image>
-      <div class="song_header" data-song_header></div>
-      <div class="song_body" data-song_body></div>
+    <div class="song_card" onclick="navigateToSongPlayer('{songid}')" data-song-id>
+      <img src="{image}" data-image>
+      <div class="song_header" data-song_header>{songname}</div>
+      <div class="song_body" data-song_body>{artist}</div>
     </div>
-  </template>      
+  </template>   
 </body>
 </html>

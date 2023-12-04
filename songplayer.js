@@ -1,21 +1,33 @@
+// songplayer.js
+
 document.addEventListener("DOMContentLoaded", function () {
   const musicContainer = document.getElementById("music-container");
   const titleElement = document.getElementById("title");
   const audioElement = document.getElementById("audio");
   const coverElement = document.getElementById("cover");
-  const artistElement = document.getElementById("artist"); // Moved outside loadMusic function
+  const artistElement = document.getElementById("artist");
 
-  let currentIndex = 0;
   let musicData;
 
-  // Fetch music data from JSON file
-  fetch("songdata.json")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      musicData = data;
-      loadMusic(currentIndex);
-    });
+  // Function to load and play a specific song based on ID
+  function loadAndPlaySong(id) {
+    // Fetch music data from JSON file
+    fetch("songdata.json")
+      .then((response) => response.json())
+      .then((data) => {
+        musicData = data;
+
+        // Find the index of the song with the given ID
+        const index = musicData.findIndex((song) => song.songid === id);
+
+        if (index !== -1) {
+          // Load and play the selected song
+          loadMusic(index);
+        } else {
+          console.error("Song not found with ID:", id);
+        }
+      });
+  }
 
   // Function to load music based on index
   function loadMusic(index) {
@@ -23,7 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
     titleElement.innerText = currentSong.songname;
     audioElement.src = currentSong.audio;
     coverElement.src = currentSong.image;
-    artistElement.innerText = currentSong.artist; // Moved this line outside the function
+    artistElement.innerText = currentSong.artist;
+
+    // Play the audio
+    audioElement.play();
 
     // Highlight the currently playing song
     const songElements = document.querySelectorAll(".song");
@@ -45,22 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
     musicContainer.classList.add("current-song");
   }
 
-  function togglePlay() {
-    if (audioElement.paused) {
-      audioElement.play();
-    } else {
-      audioElement.pause();
-    }
-    updatePlayButton(); // Update the play button icon
-  }
-
-  function updatePlayButton() {
-    const playIcon = document.querySelector("#play i");
-    const isPlaying = !audioElement.paused;
-
-    playIcon.className = isPlaying ? "fas fa-pause" : "fas fa-play";
-  }
-
   // Event listener for play button
   document.getElementById("play").addEventListener("click", togglePlay);
 
@@ -79,13 +78,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add an event listener to the audio element to update the play button when the audio is paused or played
   audioElement.addEventListener("play", updatePlayButton);
   audioElement.addEventListener("pause", updatePlayButton);
-});
 
-function songPlayer(id) {
-  const selectedSongIndex = parseInt(id, 10); // Parse the id to an integer
-
-  if (!isNaN(selectedSongIndex)) {
-    // Play the selected song in the song player
-    playMusic(selectedSongIndex);
+  // Function to toggle play/pause
+  function togglePlay() {
+    if (audioElement.paused) {
+      audioElement.play();
+    } else {
+      audioElement.pause();
+    }
+    updatePlayButton(); // Update the play button icon
   }
-}
+
+  // Function to update play button icon
+  function updatePlayButton() {
+    const playIcon = document.querySelector("#play i");
+    const isPlaying = !audioElement.paused;
+
+    playIcon.className = isPlaying ? "fas fa-pause" : "fas fa-play";
+  }
+
+  // Initial load and play based on the song ID from the URL
+  loadAndPlaySong(getSongIdFromUrl());
+
+  // Helper function to get song ID from URL parameters
+  function getSongIdFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('id');
+  }
+});
