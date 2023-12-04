@@ -57,9 +57,9 @@
                     <div class="links">
                         Don't have an account? <a href="register.php">Sign Up</a>
                     </div>
-                    
+
                     <form>
-                        <button type="reset" class ="button" onclick="location.href='register.php'"> 
+                        <button type="reset" class ="button" onclick="location.href='smart_recognition.py'"> 
                         Login with Face ID
                      </button>
                     </form>
