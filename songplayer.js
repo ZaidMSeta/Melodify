@@ -1,5 +1,3 @@
-// songplayer.js
-
 document.addEventListener("DOMContentLoaded", function () {
   const musicContainer = document.getElementById("music-container");
   const titleElement = document.getElementById("title");
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const index = musicData.findIndex((song) => song.songid === id);
 
         if (index !== -1) {
-          // Load and play the selected song
+
           loadMusic(index);
         } else {
           console.error("Song not found with ID:", id);
@@ -37,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     coverElement.src = currentSong.image;
     artistElement.innerText = currentSong.artist;
 
-    // Play the audio
+
     audioElement.play();
 
     // Highlight the currently playing song
