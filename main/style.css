@@ -178,7 +178,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: #ffffff; /* icon box hover colour */
+    background-color: rgb(255, 128, 128); /* icon box hover colour */
     color: #000000; /* icon hover colour */
 }
 
