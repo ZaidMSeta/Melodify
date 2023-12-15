@@ -187,3 +187,8 @@ html {
       display: block;
     }
   }
+  
+.light-mode {
+    background-color: #ffffff;
+    color: #000000; /* Text color for dark mode */
+}
