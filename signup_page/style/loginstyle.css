@@ -6,7 +6,7 @@
     font-family: 'Lato', sans-serif;
 }
 body{
-    background-color:rgb(53, 104, 41)
+    background-color:rgb(207, 45, 45);
 }
 .container{
     display: flex;
@@ -53,7 +53,7 @@ body{
 }
 .button{
     height: 35px;
-    background: rgba(45, 122, 58, 0.808);
+    background: rgb(207, 45, 45);
     border: 0;
     border-radius: 5px;
     color: #fff;
@@ -73,7 +73,7 @@ body{
 /*Home test*/
 
 .nav{
-    background: #5fc751;
+    background: rgb(207, 45, 45);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -128,10 +128,10 @@ body{
 }
 .message{
     text-align: center;
-    background: #a01010;
+    background: #242424;
     padding: 15px 0px;
     border:1px solid #cf1b0b;
     border-radius: 5px;
     margin-bottom: 10px;
-    color: rgb(213, 76, 76);
+    color: rgb(255, 255, 255);
 }
