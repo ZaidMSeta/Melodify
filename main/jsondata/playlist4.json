@@ -1,0 +1,34 @@
+[
+        {
+            "songname": "Power Trip",
+            "artist": "Jcole",
+            "link": "https://www.youtube.com/watch?v=7AjD7nKiUQ4&ab_channel=JColeVEVO",
+            "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
+            "audio": "song_audio/J. Cole - Power Trip (Explicit) ft. Miguel.mp3",
+            "songid": "19"
+        },
+        {
+            "songname": "She Knows",
+            "artist": "Jcole",
+            "link": "https://www.youtube.com/watch?v=jYdaQJzcAcw&ab_channel=JColeVEVO",
+            "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
+            "audio": "song_audio/J. Cole - She Knows (Explicit Video) ft. Amber Coffman, Cults.mp3",
+            "songid": "21"
+        },
+        {
+            "songname": "Dreamville",
+            "artist": "Jcole",
+            "link": ".",
+            "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
+            "audio": "song_audio/Dreamville - Under The Sun ft. J. Cole, DaBaby, Lute (Official Music Video).mp3",
+            "songid": "22"
+        },
+        {
+            "songname": "Workout",
+            "artist": "Jcole",
+            "link": "https://www.youtube.com/watch?v=T13se_2A7c8",
+            "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
+            "audio": "song_audio/J. Cole  Work Out (Official Music Video).mp3",
+            "songid": "23"
+        }
+    ]
