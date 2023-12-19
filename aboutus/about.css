@@ -12,12 +12,7 @@ body {
     font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.topbar {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-}
+
 .profile {
     width: 50px;
     border-radius: 100%;
@@ -147,7 +142,9 @@ html {
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     margin: 8px;
-    background-color: #706f6f;
+    background-color: #cfcfcf;
+    outline-style: solid;
+    outline-color: #a70000;
   }
   
 .container {
@@ -161,7 +158,7 @@ html {
   }
   
 .title {
-    color: rgb(207, 207, 207);
+    color: rgb(255, 0, 0);
   }
   
 .button {
@@ -170,7 +167,7 @@ html {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #9e3939;
+    background-color: #a70000;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -190,5 +187,19 @@ html {
   
 .light-mode {
     background-color: #ffffff;
-    color: #000000; /* Text color for dark mode */
+    color: #000000; 
+}
+
+
+
+.light-mode .button:hover {
+    background-color: #ffffff; 
+    color: #000;
+}
+
+.light-mode .card {
+    background-color: #e2e2e2;
+}
+.light-mode .title {
+    color: #a70000;
 }

@@ -49,3 +49,11 @@ function playSong(id) {
   // Redirect to the song player page with the selected song ID
   window.location.href = `../songplayer.html?id=${id}`;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Check the user's preference from previous visits (if available)
+  const storedLightMode = localStorage.getItem('lightMode');
+  if (storedLightMode === 'enabled') {
+      document.body.classList.add('light-mode');
+  }
+});
