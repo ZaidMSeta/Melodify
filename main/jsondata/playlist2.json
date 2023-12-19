@@ -6,7 +6,7 @@
             "link": "https://www.youtube.com/watch?v=vVooyS4mG4w",
             "image": "../song_images/test.png",
             "audio": "song_audio/On_the_run.mp3",
-            "songid": "song3"
+            "songid": "3"
             },
             {
                 "songname": "Hotline Bling",
@@ -14,7 +14,7 @@
                 "link": "https://www.youtube.com/watch?v=uxpDa-c-4Mc",
                 "image": "../song_images/drrr.jpg",
                 "audio": "song_audio/Drake - Hotline Bling.mp3",
-                "songid": "song26"
+                "songid": "26"
             },
             {
                 "songname": "Hold On, We're Going Home",
@@ -22,7 +22,7 @@
                 "link": "https://www.youtube.com/watch?v=GxgqpCdOKak",
                 "image": "../song_images/drake.jpg",
                 "audio": "song_audio/Drake - Hold On, Were Going Home ft. Majid Jordan.mp3",
-                "songid": "song35"
+                "songid": "35"
             },
             {
                 "songname": "Dreamville",
@@ -30,6 +30,6 @@
                 "link": ".",
                 "image": "../song_images/ab67616d0000b273c1bb124f993488cf21b269fc.jpg",
                 "audio": "song_audio/Dreamville - Under The Sun ft. J. Cole, DaBaby, Lute (Official Music Video).mp3",
-                "songid": "song22"
+                "songid": "22"
             }
 ]
