@@ -344,7 +344,4 @@ input {
     color: #000;
   }
 
-  .light-mode .[data-category-title] {
-    color: #000;
-    background-color: #000;
-  }
+
