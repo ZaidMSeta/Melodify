@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/edf568d139.js" crossorigin="anonymous"></script>
     <link href="about.css" rel="stylesheet"> 
+    <script src="about.js"></script>
+    <script src="../settings/settings.js"></script>
 </head>
 <body>
     <div class="topbar">
@@ -16,35 +18,35 @@
             <img src="../main/profile.jpg" alt="profile" class="profile">
         </div>
         <ul>
-            <li>
-                <a href="../searchbar/searchbar.html">
-                    <i class="bx bxs-music"></i>
-                    <span class="nav-item">Songs</span>
-                </a>
-                <span class="tooltip">Songs</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="bx bxs-user"></i>
-                    <span class="nav-item">AboutUs</span>
-                </a>
-                <span class="tooltip">About Us</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="bx bxs-cog"></i>
-                    <span class="nav-item">Settings</span>
-                </a>
-                <span class="tooltip">Settings</span>
-            </li>
-            <li>
-                <a href="../signup_page/php/logout.php">
-                    <i class="bx bxs-log-out"></i>
-                    <span class="nav-item">Logout</span>
-                </a>
-                <span class="tooltip">Logout</span>
-            </li>
-        </ul>
+          <li>
+              <a href="../searchbar/searchbar.html">
+                  <i class="fa-solid fa-music" style="color: #ffffff;"></i>
+                  <span class="nav-item">Songs</span>
+              </a>
+              <span class="tooltip">Songs</span>
+          </li>
+          <li>
+              <a href="../aboutus/about.html">
+                  <i class="fa-solid fa-users" style="color: #ffffff;"></i>
+                  <span class="nav-item">AboutUs</span>
+              </a>
+              <span class="tooltip">About Us</span>
+          </li>
+          <li>
+              <a href="../settings/settings.html">
+                  <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                  <span class="nav-item">Settings</span>
+              </a>
+              <span class="tooltip">Settings</span>
+          </li>
+          <li>
+              <a href="../signup_page/php/logout.php">
+                  <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff;"></i>
+                  <span class="nav-item">Logout</span>
+              </a>
+              <span class="tooltip">Logout</span>
+          </li>
+      </ul>
         </div>
     </div>
     <div class="row">
@@ -127,5 +129,6 @@
           </div>
         </div>
       </div> 
+    <script>src="about.js"</script>
 </body>
 </html>
