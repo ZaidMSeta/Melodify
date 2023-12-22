@@ -116,3 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return urlParams.get('id');
   }
 });
+function goBack() {
+  console.log("hello");
+  window.location.href = '../main/index.html';
+}
