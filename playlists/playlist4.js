@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $.getJSON('../main/jsondata/playlistsongs.json', function (data) {
+    $.getJSON('../jsondata/playlist4.json', function (data) {
         var playlistContainer = $('#playlist-container');
 
         $.each(data, function (index, song) {

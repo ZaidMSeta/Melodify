@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Chill Playlist",
+        "description": "Feel the rhythm with this incredible mix!",
+        "album_cover": "playlistimages/power.jpg",
+        "category": "Pop-Culture",
+        "link": "../playlists/playlist1.html"
+    },
+    {
+        "title": "Pink Floyd Classics",
+        "description": "SUPER MIX, LISTEN ON THE GO!",
+        "album_cover": "../song_images/test.png",
+        "category": "Pop-Culture",
+        "link": "../playlists/playlist2.html"
+    },
+    {
+        "title": "POWER PLAYLIST",
+        "description": "JCOLE Inspired playlist",
+        "album_cover": "playlistimages/jcole.jpg",
+        "category": "Melodify Classics",
+        "link": "../playlists/playlist3.html"
+    },
+    {
+        "title": "SUPER PLAYLIST",
+        "description": "Treat from the developers",
+        "album_cover": "playlistimages/imgtest.jpg",
+        "category": "Melodify Classics",
+        "link": "../playlists/playlist4.html"
+    }
+]

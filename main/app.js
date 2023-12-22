@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = link;
     }
 
-    fetch("jsondata/playlistdata.json")
+    fetch("../jsondata/playlistdata.json")
         .then(res => res.json())
         .then(data => {
             const categories = {};
