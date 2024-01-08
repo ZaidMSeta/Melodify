@@ -46,10 +46,6 @@ input {
   padding: 10px;
 }
 
-input::placeholder {
-  color: #888;
-}
-
 /* Search button styles */
 .search-button {
   background-color: #343434;
@@ -159,3 +155,18 @@ input::placeholder {
     border-bottom: 5px solid rgb(207, 45, 45);
 }
 
+.light-mode {
+  background-color: #ffffff;
+  color: #050505;
+}
+
+.light-mode .input {
+  color: #000;
+}
+
+.light-mode .search-button {
+  background-color: #ffffff;
+}
+.light-mode .input {
+  background-color: #ffffff;
+}

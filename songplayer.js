@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const artistElement = document.getElementById("artist");
 
   let musicData;
+  let currentIndex = 0; // Added currentIndex variable
 
   // Function to load and play a specific song based on ID
   function loadAndPlaySong(id) {
@@ -19,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const index = musicData.findIndex((song) => song.songid === id);
 
         if (index !== -1) {
-
           loadMusic(index);
+          // Update the URL
+          updateURL(musicData[currentIndex].songid);
         } else {
           console.error("Song not found with ID:", id);
         }
@@ -29,12 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to load music based on index
   function loadMusic(index) {
+    currentIndex = index; // Update currentIndex
     const currentSong = musicData[index];
     titleElement.innerText = currentSong.songname;
     audioElement.src = currentSong.audio;
     coverElement.src = currentSong.image;
     artistElement.innerText = currentSong.artist;
-
 
     audioElement.play();
 
@@ -65,12 +67,16 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("next").addEventListener("click", function () {
     currentIndex = (currentIndex + 1) % musicData.length;
     loadMusic(currentIndex);
+    // Update the URL
+    updateURL(musicData[currentIndex].songid);
   });
 
   // Event listener for previous button
   document.getElementById("prev").addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + musicData.length) % musicData.length;
     loadMusic(currentIndex);
+    // Update the URL
+    updateURL(musicData[currentIndex].songid);
   });
 
   // Add an event listener to the audio element to update the play button when the audio is paused or played
@@ -95,6 +101,12 @@ document.addEventListener("DOMContentLoaded", function () {
     playIcon.className = isPlaying ? "fas fa-pause" : "fas fa-play";
   }
 
+  // Function to update the URL
+  function updateURL(songId) {
+    const newURL = `${window.location.origin}${window.location.pathname}?id=${songId}`;
+    history.pushState({}, '', newURL);
+  }
+
   // Initial load and play based on the song ID from the URL
   loadAndPlaySong(getSongIdFromUrl());
 
@@ -104,3 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return urlParams.get('id');
   }
 });
+function goBack() {
+  console.log("hello");
+  window.location.href = '../main/index.html';
+}
