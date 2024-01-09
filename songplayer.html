@@ -26,6 +26,45 @@
 
         <div class="img-container">
             <img id="cover" alt="music-cover" />
+            <script>
+                 function extractAvgColor(cover, ratio) {
+                    let data, length, i = 0, count = 0, R = 0, G = 0, B = 0;
+
+                    const canvas = document.createElement("canvas");
+                    let height = canvas.height = cover.naturalHeight;
+                    let width = canvas.width = cover.naturalWidth;
+
+                    const imgCanva = canvas.getContext("2d");
+                    imgCanva.drawImage(cover, 0, 0);
+
+                    data = imgCanva.getImageData(0, 0, width, height).data;
+                    length = data.length;
+
+                    while ((i += ratio * 4) < length) {
+                        ++count;
+                        R += data[i];
+                        G += data[i + 1];
+                        B += data[i + 2];
+                    }
+
+                    R = Math.round(R / count);
+                    G = Math.round(G / count);
+                    B = Math.round(B / count);
+
+                    return {
+                        R,
+                        G,
+                        B
+                    };
+                 }
+
+                    const img = document.getElementById("cover");
+
+                    img.onload = () => {
+                    const { R, G, B } = extractAvgColor(img, 9999)
+                    document.body.style.background = `rgb(${R}, ${G},${B})`
+                    }
+            </script>
         </div>
 
         <div class="navigation">

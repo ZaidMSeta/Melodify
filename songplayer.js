@@ -120,3 +120,6 @@ function goBack() {
   console.log("hello");
   window.location.href = '../main/index.html';
 }
+const canvas = document.createElement("canvas");
+const imgCanva = canvas.getContext("2d");
+imgCanva.drawImage(cover, 0, 0);
