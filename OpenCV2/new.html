@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video autoplay playsinline>
+
+    </video>
+    <script>
+        var video = document.querySelector("video");
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({video: true})
+            .then(function (stream) {
+                video.srcObject = stream;
+                
+            })
+            .catch(function (err0r) {
+                console.log(err0r);
+            });
+        }
+    </script>
+</body>
+</html>

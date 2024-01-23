@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500&display=swap");
+
+body {
+  width: 1200px;
+  margin: auto;
+  font-family: "Karla", sans-serif;
+  background: #9ebded;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  place-content: center;
+  height: 100vh;
+  background: #9ebded;
+}
+
+.preview,
+.recorded {
+  margin: auto;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+button,
+.button {
+  padding: 0.5rem 3rem;
+  background: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#startButton,
+h2 {
+  margin-left: 2rem;
+}
+
+#downloadButton {
+  margin: auto;
+}
+
+#log {
+  color: #fff;
+  margin-bottom: 3rem;
+}

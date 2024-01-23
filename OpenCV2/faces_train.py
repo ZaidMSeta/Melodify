@@ -2,7 +2,7 @@ import os
 import cv2 as cv
 import numpy as np
 
-people = ['Jimmy Kimmel', 'Jimmy Fallon', 'Stephen Colbert']
+people = ['Jacob', 'Hiep', 'Rilett', 'ZaidS', 'ZaidA', 'Dawan']
 
 #p = []
 
@@ -11,7 +11,7 @@ people = ['Jimmy Kimmel', 'Jimmy Fallon', 'Stephen Colbert']
 
 #print(p)
 
-DIR = r'C:\Users\jacob\Documents\OpenCV2\Recognition Training'
+DIR = r'C:\Users\jacob\Documents\OpenCV2\Faces'
 
 haar_cascade = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
