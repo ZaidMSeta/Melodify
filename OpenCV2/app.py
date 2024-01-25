@@ -7,9 +7,9 @@ app = Flask(__name__)
 def index():
     return render_template("index(2).html")
 
-@app.route('/homepage/')
+@app.route('/login/')
 def my_link():
-    return render_template("homepage.html")
+    return render_template("login.html")
 
 @app.route('/capture/')
 def capture():
