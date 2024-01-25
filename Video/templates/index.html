@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <video autoplay playsinline></video>
+  <button onclick="startRecording()">start</button>
+  <p></p>
+  <script>
+    const video = document.querySelector("video")
+    
+    navigator.mediaDevices.getUserMedia({
+      audio: false,
+      video: true
+    }).then(s => video.srcObject = s)
+
+    const stream = video.captureStream(25)
+    let recordedChunks = []
+    const mediaRecorder = new MediaRecorder(stream, { 
+      mimeType: `video/webm; codecs=vp9`
+    })
+
+    mediaRecorder.ondataavailable = async event => {
+      if (event.data.size > 0) {
+        recordedChunks.push(event.data)
+        const blob = new Blob(recordedChunks, {
+          type: "video/webm",
+        })
+        const file = new File([blob], 'video.webm', { type: "video/webm" });
+        const formData = new FormData();
+        formData.append('video', file, 'video.webm');
+        recordedChunks = []
+        const res = await fetch("/api/recognition", {
+          method: "POST",
+          body: formData
+        })
+        const { name } = await res.json()
+        document.querySelector("p").innerText = name
+      }
+    }
+
+    function startRecording() {
+      mediaRecorder.start()
+      const timeout = setTimeout(() => {
+        mediaRecorder.stop()
+      }, 2000)
+    }
+  </script>
+</body>
+</html>
